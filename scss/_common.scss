@@ -1,0 +1,49 @@
+//Button
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-orange {
+  background: linear-gradient(180deg, #F98949 0%, #F17228 100%);
+  box-shadow: 0px 2px 4px #EF684B;
+  border-radius: 48px !important;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//Text
+.text-big-head {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+  color: $blue-dark;
+}
+.text-medium {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $gray-v1;
+}
+
+.text-size-16 {
+  font-size: 16px;
+}
+
+.text-normal {
+  font-size: 14px;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
