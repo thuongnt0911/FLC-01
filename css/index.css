@@ -137,35 +137,24 @@ table {
 }
 
 .main__banner {
-  height: 35rem;
   position: relative;
 }
 
-@media screen and (min-width: 992px) {
-  .main__banner {
-    height: 75rem;
-  }
+.main__banner .banner-bg {
+  width: 100%;
+  height: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .main__banner {
-    height: 69rem;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .main__banner .banner {
-    height: 40rem;
-  }
-}
-
-.main__banner .banner-container {
-  background-image: url("../images/background01.png");
+.main__banner .banner-bg img {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 226px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__banner .banner-text-box {
+  position: absolute;
+  top: 226px;
 }
 
 .main__banner .btn-apply {
@@ -190,17 +179,82 @@ table {
 }
 
 .main__banner .scroll-to-continue {
-  bottom: 285px;
+  bottom: 119px;
   left: 50%;
   color: white;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  text-decoration: none;
 }
 
-.main__job .job-container {
-  background: url("../images/background02.png");
+.main__job {
+  position: relative;
+}
+
+.main__job .job-bg {
+  width: 100%;
+  height: auto;
+}
+
+.main__job .job-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__job .job-text-box {
+  position: absolute;
+}
+
+.main__job .job-text-box .btn-apply-now {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F98949), to(#F17228));
+  background: linear-gradient(180deg, #F98949 0%, #F17228 100%);
+  -webkit-box-shadow: 0px 2px 4px #EF684B;
+          box-shadow: 0px 2px 4px #EF684B;
+  border-radius: 48px;
+}
+
+.main__job .job-text-box h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.main__job .job-text-box li {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.main__job .job-text-box li img {
+  margin-right: 17px;
+}
+
+.main__job .job-text-box li p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main__job .job-text-box__left {
+  top: 125px;
+}
+
+.main__job .job-text-box__right {
+  bottom: 206px;
+  right: 0;
 }
 
 .main__job input {
@@ -209,6 +263,7 @@ table {
 
 .main__job input:checked + label {
   border-bottom: 3px solid #EF684B;
+  color: white;
 }
 
 .main__job input#tab1:checked ~ .line {
@@ -246,20 +301,24 @@ table {
 .main__job label {
   display: inline-block;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
   text-align: center;
-  color: #fff;
+  color: #787878;
   position: relative;
   -webkit-transition: 0.25s background ease;
   transition: 0.25s background ease;
   cursor: pointer;
   text-transform: uppercase;
+  margin-bottom: 45px;
+  margin-right: 40px;
+  padding-bottom: 7px;
 }
 
 .main__job label::after {
   content: "";
   height: 2px;
-  width: 100%;
   position: absolute;
   display: block;
   background: #ccc;
@@ -274,17 +333,6 @@ table {
   opacity: 1;
 }
 
-.main__job .line {
-  position: absolute;
-  height: 2px;
-  background: #1E88E5;
-  width: 25%;
-  top: 34px;
-  left: 0;
-  -webkit-transition: 0.25s ease;
-  transition: 0.25s ease;
-}
-
 .main__job .content-container {
   position: relative;
   height: 100px;
@@ -293,8 +341,6 @@ table {
 
 .main__job .content-container .content {
   position: absolute;
-  padding: 10px;
-  width: 100%;
   top: 0;
   opacity: 0;
   -webkit-transition: 0.25s ease;
@@ -308,10 +354,8 @@ table {
 }
 
 .main__job .content-container .content p {
-  margin: 10px 0;
-}
-
-.main__job .content-container .content p, .main__job .content-container .content i {
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=index.css.map */
